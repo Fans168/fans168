@@ -61,9 +61,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background-image:
-                linear-gradient(135deg, rgba(76, 29, 149, 0.55), rgba(124, 58, 237, 0.55)),
-                var(--header-image);
+            background-image: var(--header-image);
             background-size: cover;
             background-position: center;
             color: white;
@@ -73,17 +71,24 @@
 
         header h1 {
             margin: 0;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 3px;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 800;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #22d3ee, #a855f7, #f472b6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 2px 3px rgba(0,0,0,0.85)) drop-shadow(0 0 14px rgba(0,0,0,0.6));
         }
 
         header p {
-            margin: 8px 0 0 0;
-            font-size: 13px;
-            letter-spacing: 1px;
-            color: #ede9fe;
+            margin: 10px 0 0 0;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #fde68a;
             text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
         }
 
         .container {
