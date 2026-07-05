@@ -14,7 +14,7 @@
 
             /* ============ 可自訂區 ============ */
             /* 頂部橫幅底圖：留空字串 '' 就只顯示紫色漸層 */
-            --header-image: url('header-bg.png');
+            --header-image: url('banner.png');
             /* 全頁灰階浮水印底圖 */
             --watermark-image: url('bg.png');
             --watermark-opacity: 0.08;
@@ -54,10 +54,15 @@
 
         header {
             width: 100%;
+            min-height: 200px;
             padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             background-image:
-                linear-gradient(135deg, rgba(76, 29, 149, 0.92), rgba(124, 58, 237, 0.92)),
+                linear-gradient(135deg, rgba(76, 29, 149, 0.55), rgba(124, 58, 237, 0.55)),
                 var(--header-image);
             background-size: cover;
             background-position: center;
